@@ -12,7 +12,7 @@ namespace Reflect
             Type type = assembly.GetType("API.Account",true,false);
             Account account = (Account)Activator.CreateInstance(type);
             //Account account = (Account)assembly.CreateInstance("API.Account");
-
+            //test
             #region 属性反射
             PropertyInfo property = account.GetType().GetProperty("Username");
             if (property != null)
